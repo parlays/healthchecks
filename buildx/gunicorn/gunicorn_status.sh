@@ -3,5 +3,3 @@
 
 sudo systemctl status gunicorn
 
-
-
