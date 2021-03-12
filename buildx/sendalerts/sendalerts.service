@@ -4,20 +4,19 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-Slice=machine.slice
-Restart=always
-RestartSec=20
-StartLimitInterval=10
-StartLimitBurst=5
-
+# Slice=machine.slice
+# Restart=always
+# RestartSec=20
+# StartLimitInterval=10
+# StartLimitBurst=5
+Type=simple
 User=ubuntu
-Group=www-data
-
-ExecStart=python -u /home/ubuntu/healthchecks/manage.py sendalerts --no-threads
-
-PrivateDevices=true
-ProtectHome=true
-ProtectSystem=full
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/healthchecks
+ExecStart=python -u manage.py sendalerts --no-threads
+# PrivateDevices=true
+# ProtectHome=true
+# ProtectSystem=full
 
 [Install]
 WantedBy=multi-user.target
