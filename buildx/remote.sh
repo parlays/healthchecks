@@ -2,7 +2,7 @@
 
 root=/var/www;
 group=www-data;
-HOST="healthchecks.wagernotes.com"
+HOST="hc.3434.ninja"
 user=ubuntu;
 
 # "ssh -i $key_dir"

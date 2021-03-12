@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOST="healthchecks.wagernotes.com"
+HOST="hc.3434.ninja"
 user=ubuntu;
 
 ssh $user@$HOST
