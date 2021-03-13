@@ -2,7 +2,7 @@
 
 root=/var/www;
 group=www-data;
-HOST="hc.3434.ninja"
+HOST="233.ninja"
 user=ubuntu;
 
 # "ssh -i $key_dir"
