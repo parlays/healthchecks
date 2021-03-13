@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOST="233.ninja"
+HOST="989.ninja"
 user=ubuntu;
 
 ssh $user@$HOST
